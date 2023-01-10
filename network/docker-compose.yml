@@ -68,6 +68,7 @@ services:
       - ./config/nodes/validator1:/config/keys
       - ./logs/quorum:/var/log/quorum/
       - ./config/permissions:/permissions
+      - ./data/validator1/geth:/data/geth
     networks:
       quorum-dev-quickstart:
         ipv4_address: 172.16.239.11
@@ -85,6 +86,7 @@ services:
       - ./config/nodes/validator2:/config/keys
       - ./logs/quorum:/var/log/quorum/
       - ./config/permissions:/permissions
+      - ./data/validator2/geth:/data/geth
     networks:
       quorum-dev-quickstart:
         ipv4_address: 172.16.239.12
@@ -102,6 +104,7 @@ services:
       - ./config/nodes/validator3:/config/keys
       - ./logs/quorum:/var/log/quorum/
       - ./config/permissions:/permissions
+      - ./data/validator3/geth:/data/geth
     networks:
       quorum-dev-quickstart:
         ipv4_address: 172.16.239.13
@@ -119,6 +122,7 @@ services:
       - ./config/nodes/validator4:/config/keys
       - ./logs/quorum:/var/log/quorum/
       - ./config/permissions:/permissions
+      - ./data/validator4/geth:/data/geth
     networks:
       quorum-dev-quickstart:
         ipv4_address: 172.16.239.14

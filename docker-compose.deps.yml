@@ -9,7 +9,7 @@ x-container-common:
 services:
   vault:
     <<: *container-common
-    image: consensys/quorum-hashicorp-vault-plugin:v1.1.4
+    image: toanalien/quorum-hashicorp-vault-plugin:v1.1.5-arm
     tty: true
     restart: "no"
     cap_add:
