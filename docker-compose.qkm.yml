@@ -32,14 +32,14 @@ x-container-common: &container-common
 services:
   key-manager-migration:
     <<: *container-common
-    image: toanalien/quorum-key-manager:v21.12.5-arm
+    image: toanalien/quorum-key-manager:v21.12.5
     environment:
       <<: *default-variables
     command: migrate up
 
   key-manager:
     <<: *container-common
-    image: toanalien/quorum-key-manager:v21.12.5-arm
+    image: toanalien/quorum-key-manager:v21.12.5
     environment:
       <<: *default-variables
       MANIFEST_PATH: ${MANIFEST_PATH-/manifests}

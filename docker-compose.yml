@@ -20,7 +20,7 @@ x-default-variables: &default-variables
 
 x-container-common: &container-common
   restart: ${CONTAINER_RESTART-on-failure}
-  image: toanalien/orchestrate:v21.12.9-arm
+  image: toanalien/orchestrate:v21.12.9
   networks:
   - orchestrate
   - deps
