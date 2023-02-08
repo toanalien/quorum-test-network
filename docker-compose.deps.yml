@@ -127,6 +127,12 @@ services:
       timeout: 1s
       retries: 5
 
+  adminer:
+    <<: *container-common
+    image: adminer
+    ports:
+      - 28000:8080
+
 volumes:
   db-data:
     driver: local
