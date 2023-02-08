@@ -12,7 +12,7 @@ x-default-variables: &default-variables
   DB_TLS_CA: ${DB_TLS_CA-}
   DB_HOST: ${DB_HOST-postgres}
   DB_PORT: ${DB_PORT-}
-  DB_DATABASE: ${DB_DATABASE-}
+  DB_DATABASE: ${DB_DATABASE-postgres}
   DB_POOLSIZE: ${DB_POOLSIZE-}
   DB_POOL_TIMEOUT: ${DB_POOL_TIMEOUT-}
   AUTH_OIDC_CA_CERT: ${AUTH_OIDC_CA_CERT-}
